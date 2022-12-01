@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ -z "$1" ]; then
+  echo "Please give your username as an argument."
+  exit 1
+fi
+
+for (( i=1; i<=25; i++ ))
+do
+  mkdir "Day$i/$1"
+  touch "Day$i/$1/.gitkeep"
+done
