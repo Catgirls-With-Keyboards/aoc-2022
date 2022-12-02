@@ -1,14 +1,3 @@
-use std::fs::File;
-use std::io::prelude::*;
-use std::path::Path;
-
-fn open_file(path: &Path) -> String {
-  let mut file = File::open(&path).unwrap();
-  let mut s = String::new();
-  file.read_to_string(&mut s).unwrap();
-  s
-}
-
 fn part1(input: &String) -> i32 {
   let mut largest : i32 = 0;
   for s in input.split("\n\n") {
@@ -26,7 +15,6 @@ fn part2(input: &String) -> i32 {
   let mut l1 : i32 = 0;
   let mut l2 : i32 = 0;
   let mut l3 : i32 = 0;
-
   for s in input.split("\n\n") {
     let mut sum : i32 = 0;
     for l in s.split("\n") {
@@ -42,7 +30,7 @@ fn part2(input: &String) -> i32 {
 }
 
 fn main() {
-  let input = open_file(Path::new("input.txt"));
+  let input = std::fs::read_to_string("input.txt").unwrap();
   let p1 = part1(&input);
   println!("{p1}");
   let p2 = part2(&input);
