@@ -1,9 +1,9 @@
-use std::io::{BufReader,BufRead};
+use std::io::{BufReader, BufRead};
 use std::fs::File;
 use std::path::Path;
 
 fn main() {
-    let path = Path::new("../input.txt");
+    let path = Path::new("./input.txt");
     let file = BufReader::new(File::open(&path).unwrap());
     let mut max0: i32 = 0;
     let mut max1: i32 = 0;
