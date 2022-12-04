@@ -25,5 +25,5 @@ fn main() {
             }
         }
     }
-    print!("{}\n", cost);
+    print!("Part 1: {}\n", cost);
 }

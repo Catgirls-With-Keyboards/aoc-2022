@@ -20,5 +20,6 @@ fn main() {
             total += line.parse::<i32>().unwrap(); // may panic, should not for valid data
         }
     }
-    print!("{}\n", max0 + max1 + max2);
+    print!("Part 1: {}\n", max2);
+    print!("Part 2: {}\n", max0 + max1 + max2);
 }
