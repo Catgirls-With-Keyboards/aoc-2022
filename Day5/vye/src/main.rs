@@ -33,31 +33,31 @@ fn main() {
                 }
             }
         }
-        let mut stack9001_1: Vec<char> = vec![];
-        let mut stack9001_2: Vec<char> = vec![];
-        let mut stack9001_3: Vec<char> = vec![];
-        let mut stack9001_4: Vec<char> = vec![];
-        let mut stack9001_5: Vec<char> = vec![];
-        let mut stack9001_6: Vec<char> = vec![];
-        let mut stack9001_7: Vec<char> = vec![];
-        let mut stack9001_8: Vec<char> = vec![];
-        let mut stack9001_9: Vec<char> = vec![];
-        macro_rules! stack9001{
-                [$i:expr]=>{
-                    match ($i) {
-                        1 => &mut stack9001_1,
-                        2 => &mut stack9001_2,
-                        3 => &mut stack9001_3,
-                        4 => &mut stack9001_4,
-                        5 => &mut stack9001_5,
-                        6 => &mut stack9001_6,
-                        7 => &mut stack9001_7,
-                        8 => &mut stack9001_8,
-                        9 => &mut stack9001_9,
-                        _ => panic!("stack number not defined")
-                    }
+    let mut stack9001_1: Vec<char> = vec![];
+    let mut stack9001_2: Vec<char> = vec![];
+    let mut stack9001_3: Vec<char> = vec![];
+    let mut stack9001_4: Vec<char> = vec![];
+    let mut stack9001_5: Vec<char> = vec![];
+    let mut stack9001_6: Vec<char> = vec![];
+    let mut stack9001_7: Vec<char> = vec![];
+    let mut stack9001_8: Vec<char> = vec![];
+    let mut stack9001_9: Vec<char> = vec![];
+    macro_rules! stack9001{
+            [$i:expr]=>{
+                match ($i) {
+                    1 => &mut stack9001_1,
+                    2 => &mut stack9001_2,
+                    3 => &mut stack9001_3,
+                    4 => &mut stack9001_4,
+                    5 => &mut stack9001_5,
+                    6 => &mut stack9001_6,
+                    7 => &mut stack9001_7,
+                    8 => &mut stack9001_8,
+                    9 => &mut stack9001_9,
+                    _ => panic!("stack number not defined")
                 }
             }
+        }
     let mut lines = file.lines();
     'build_port: loop {
         let wrapped_line = lines.next().unwrap();
