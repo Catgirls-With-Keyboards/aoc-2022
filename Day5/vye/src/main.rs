@@ -73,15 +73,6 @@ fn main() {
             }
         }
     }
-    // print!("{:?}\n", stack1);
-    // print!("{:?}\n", stack2);
-    // print!("{:?}\n", stack3);
-    // print!("{:?}\n", stack4);
-    // print!("{:?}\n", stack5);
-    // print!("{:?}\n", stack6);
-    // print!("{:?}\n", stack7);
-    // print!("{:?}\n", stack8);
-    // print!("{:?}\n", stack9);
     assert_eq!(0, lines.next().unwrap().unwrap().len()); // gap between port diagram and instructions
     for wrapped_line in lines {
         let line = wrapped_line.unwrap(); // may panic, should not for valid data
